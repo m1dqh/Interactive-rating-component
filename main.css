@@ -37,7 +37,7 @@ li {
     width: 25em;
     height: 25em;
     padding-inline: 2em;
-    padding-top: 2em;
+    padding-block: 2em;
     transform: translate(-50%, -50%);
     border-radius: var(--radius);
     background-color: var(--dark-blue);
@@ -196,3 +196,11 @@ li {
 .attribution a {
     color: var(--orange);
  }
+
+@media screen and (max-width: 425px) {
+    .card-container,
+    .submit-container {
+        width: 24em;
+        height: 26em;
+    }
+}
