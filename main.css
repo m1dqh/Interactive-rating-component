@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+/* Primary */
+--orange: hsl(25, 97%, 53%);
+
+/* Neutral */
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--medium-grey: hsl(216, 12%, 54%);
+--dark-blue: hsl(213, 19%, 18%);
+--very-dark-blue: hsl(216, 12%, 8%);
+--fw-200: 200;
+--fw-400: 400;
+--fw-800: 800;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+li {
+    list-style: none;
+}
+
+.card-container,
+.submit-container {
+    --radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25em;
+    height: 25em;
+    padding-inline: 2em;
+    padding-top: 2em;
+    transform: translate(-50%, -50%);
+    border-radius: var(--radius);
+    background-color: var(--dark-blue);
+    animation: fade-in 1s ease-out forwards;
+}
+
+.submitted {
+    display: block;
+}
+
+.star-container {
+    --light-grey-transparent: hsl(217, 12%, 63%, .075);
+    --radius: 50%;
+    width: fit-content;
+    padding: 12px;
+    border-radius: var(--radius);
+    line-height: 6px;
+    text-align: center;
+    background-color: var(--light-grey-transparent);
+    margin-bottom: 2em;
+}
+
+.card-title,
+.cheers-header {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: var(--fw-400);
+}
+
+.card-paragraph,
+.cheers-paragraph {
+    color: var(--light-grey);
+    font-size: 15px;
+    margin-block: .6em;
+    line-height: 1.5;
+}
+
+.card-rating {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block: 2em;
+}
+
+.rating-btn {
+    --light-grey-transparent: hsl(217, 12%, 63%, .075);
+    --radius: 50%;
+    background-color: var(--light-grey-transparent);
+    color: var(--medium-grey);
+    border-radius: var(--radius);
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    user-select: none;
+    transition: background-color .25s ease-out, color .25s ease-out;
+}
+
+.rating-btn:hover {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.rating-btn:active {
+    background-color: var(--orange);
+}
+
+.card-submit-button {
+    --radius: 20px;
+    margin-top: .4em;
+    margin-bottom: .2em;
+    width: 100%;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 12px 20px;
+    letter-spacing: 2px;
+    transition: background-color .25s ease-out, color .25s ease-out;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.card-submit-button:hover {
+    background-color: var(--white);
+    color: var(--orange)
+}
+
+.selected {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* Cheers Page */
+
+.display-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    --light-grey-transparent: hsl(217, 12%, 63%, .075);
+    --radius: 25px;
+    color: var(--orange);
+    background-color: var(--light-grey-transparent);
+    font-size: 10px;
+    font-weight: lighter;
+    border-radius: var(--radius);
+    height: 2rem;
+    margin-block: 2em;
+    padding-inline: 2em;
+}
+
+.cheers-header,
+.cheers-paragraph {
+    text-align: center;
+}
+
+.cheers-paragraph {
+    font-weight: var(--fw-200);
+}
+
+.submit-container {
+    display: none;
+}
+
+.submitted {
+    display: block;
+    animation: fade-in .25s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--orange);
+ }

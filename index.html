@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="card-container">
+      <div class="star-container">
+          <img class="star-icon" src="./images/icon-star.svg" alt="">
+      </div>
+
+    <h1 class="card-title">How did we do?</h1>
+
+    <p class="card-paragraph">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+    <ul class="card-rating">
+        <li class="rating-btn">1</li>
+        <li class="rating-btn">2</li>
+        <li class="rating-btn">3</li>
+        <li class="rating-btn">4</li>
+        <li class="rating-btn">5</li>
+    </ul>
+
+    <form>
+        <button class="card-submit-button" type="submit" href="submitted-html" >Submit</button>
+    </form>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div class="submit-container">
+        <div class="display-rating">
+            <img src="./images/illustration-thank-you.svg" alt="">
+            <div class="rating">
+                <h3 class="rating-score">Congrats</h3>
+            </div>
+        </div>
+        <h2 class="cheers-header">Thank you!</h2>
+        <p class="cheers-paragraph">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+
+    <!-- Thank you state end -->
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">m1dqh</a>.
+  </div>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
