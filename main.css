@@ -95,6 +95,7 @@ li {
     line-height: 3rem;
     user-select: none;
     transition: background-color .25s ease-out, color .25s ease-out;
+    cursor: pointer;
 }
 
 .rating-btn:hover {

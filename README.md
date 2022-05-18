@@ -8,7 +8,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [The challenge](#the-challenge)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -21,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://m1dqh.github.io/Interactive-rating-component/)
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/css-flexbox-vanilla-javascript-Vs090hDNme)
+- Live Site URL: [github](https://m1dqh.github.io/Interactive-rating-component/)
 
 
 ### Built with
